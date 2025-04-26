@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ukázka filtrování dat</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <h1>Ukázka filtrování dat</h1>
+    <nav>
+      <a href="#tabulka">Tabulka</a>
+      <a href="#formular">Formulář</a>
+    </nav>
+  </header>
+
+  <section id="tabulka">
+    <h2>Tabulka</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Obec <input type="text" id="filterMunicipality" placeholder="Filtrovat..."></th>
+          <th>Počet obyvatel</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <tr><td>1</td><td>Praha</td><td>1 335 000</td></tr>
+        <tr><td>2</td><td>Brno</td><td>398 510</td></tr>
+        <tr><td>3</td><td>Ostrava</td><td>284 982</td></tr>
+        <tr><td>4</td><td>Plzeň</td><td>175 219</td></tr>
+        <tr><td>5</td><td>Olomouc</td><td>106 063</td></tr>
+        <tr><td>6</td><td>Liberec</td><td>104 340</td></tr>
+        <tr><td>7</td><td>Varnsdorf</td><td>14 716</td></tr>
+        <tr><td>8</td><td>Nový Bor</td><td>11 412</td></tr>
+        <tr><td>9</td><td>Cvikov</td><td>4 500</td></tr>
+        <tr><td>10</td><td>Kunratice u Cvikova</td><td>635</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="formular">
+    <h2>Formulář</h2>
+    <form id="municipalityForm">
+      <input type="text" id="selectFilter" placeholder="Hledat Obec...">
+      <select id="municipalitySelect">
+        <option>Praha</option>
+        <option>Brno</option>
+        <option>Ostrava</option>
+        <option>Plzeň</option>
+        <option>Olomouc</option>
+        <option>Liberec</option>
+        <option>Varnsdorf</option>
+        <option>Nový Bor</option>
+        <option>Cvikov</option>
+        <option>Kunratice u Cvikova</option>
+      </select>
+      <button type="submit">Odeslat</button>
+    </form>
+    <div id="result"></div>
+  </section>
+
+  <script src="municipality.js"></script>
+
+</body>
+</html>
