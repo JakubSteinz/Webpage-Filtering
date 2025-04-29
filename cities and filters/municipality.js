@@ -38,9 +38,9 @@ document.getElementById('municipalityForm').addEventListener('submit', function(
 
     if (allMunicipalities.includes(selectedMunicipality)) {
       resultDiv.textContent = `Vybrali jste: ${selectedMunicipality}`;
-      console.log("Vybrané město:", selectedMunicipality);
+      console.log("Vybraná obec:", selectedMunicipality);
     } else {
-      resultDiv.textContent = "Město nenalezeno!";
-      console.log("Město nenalezeno!");
+      resultDiv.textContent = "Obec nenalezena!";
+      console.log("Obec nenalezena!");
     }
   });
